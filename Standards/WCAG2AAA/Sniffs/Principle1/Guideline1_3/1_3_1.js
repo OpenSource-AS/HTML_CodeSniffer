@@ -678,7 +678,7 @@ _global.HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
         var usedNames     = {};
 
         for (var i = 0; i < optionInputs.length; i++) {
-            var option = optionInputs[i];
+            var option = optionInputs[i] || optionInputs.item(i);
 
             if (option.hasAttribute('name') === true) {
                 var optionName = option.getAttribute('name');
